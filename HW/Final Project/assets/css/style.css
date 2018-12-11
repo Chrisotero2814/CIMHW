@@ -1,0 +1,349 @@
+.maincontainer {
+
+
+}
+
+.container {
+  display: grid;
+  grid-gap: 20px;
+
+}
+.header {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr
+}
+
+a{
+  font-style: italic;
+}
+
+
+.navcontainer {
+  display: grid;
+  text-align: center;
+  height: 50px;
+  background-color: brown;
+}
+
+.navcontainer2 {
+  display: grid;
+  text-align: center;
+  height: 50px;
+  background-color: crimson;
+}
+
+.navcontainer3 {
+  display: grid;
+  text-align: center;
+  height: 50px;
+  background-color: grey;
+}
+
+.navcontainer4 {
+  display: grid;
+  text-align: center;
+  height: 50px;
+  background-color: yellow;
+}
+
+.navcontainer5 {
+  display: grid;
+  text-align: center;
+  height: 50px;
+  background-color: black;
+}
+
+.panel {
+  background-color: brown;
+  height: 150px;
+  width: auto;
+  grid-column: 2;
+  text-align: center;
+}
+
+.panel2 {
+  background-color: yellow;
+  height: 150px;
+  width: auto;
+  grid-column: 2;
+  text-align: center;
+}
+
+.panel3 {
+  background-color: silver;
+  height: 150px;
+  width: auto;
+  grid-column: 2;
+  text-align: center;
+}
+
+.panel4 {
+  background-color: grey;
+  height: 150px;
+  width: auto;
+  grid-column: 2;
+  text-align: center;
+}
+
+.panel5 {
+  background-color: red;
+  height: 150px;
+  width: auto;
+  grid-column: 2;
+  text-align: center;
+}
+
+h1{
+  font-size: 2.5rem;
+
+}
+
+
+
+.container2 {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.Leftbox1{
+  text-align: center;
+  background-color: silver;
+  width: 459.5px;
+  color: black;
+}
+
+.subL{
+  text-align: center;
+  background-color: silver;
+  color: black;
+
+}
+
+.picturel{
+  height: 400px;
+  width: 463px;
+  background-image: url("../Images/legolas2.jpg");
+  image-orientation: 50px;
+}
+
+
+.Rightbox1{
+  text-align: center;
+  background-color: white;
+  width: 459.5px;
+  background-color: silver;
+  color: black;
+}
+
+.Houselist{
+  text-align: left;
+}
+
+.subR{
+  color: black;
+  background-color: silver;
+}
+
+
+.RightColumn{
+  grid-column: 3;
+
+}
+
+#picture{
+  background-image: url("../Images/forge.skynet.jpg");
+  height: 450px;
+  background-size: cover;
+  background-position: bottom right;
+}
+
+.Centerbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: rgb(37, 214, 92);
+  height: 600px;
+  width: 200px;
+  grid-row: 2;
+  grid-column: 2;
+  text-align: center;
+
+  /* GALLERY ////////////////////////////// */
+  .gallery{
+  	display: grid;
+  	grid-gap: 20px;
+  	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .gallery img{
+  	width: 100%;
+  }
+
+  .gallery h2{
+  	grid-column: 1/ -1;
+  	display: grid;
+  	grid-template-columns: 1fr auto 1fr;
+  	grid-gap: 20px;
+  	align-items: center;
+  }
+
+  .gallery h2:before, .gallery h2:after{
+  	display: block;
+  	content: '';
+  	height: 10px;
+  	background: #0e740e;
+  }
+
+
+
+}
+
+.header{
+  text-align: left;
+}
+
+.footer{
+  text-align: left;
+  background-color: black;
+  color: white;
+}
+
+.picture1{
+  text-align: center;
+  background-color: red;
+}
+
+.container4 {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.Members{
+  text-align: center;
+  background-color: brown;
+}
+
+.Memberslist{
+  text-align: left;
+}
+
+.Current{
+  text-align: center;
+  background-color: brown;
+}
+
+.Currentlist{
+  text-align: left;
+}
+
+.containerF{
+  display: grid;
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.box1{
+  columns: 1.5fr 1.5fr;
+  border-style: groove;
+
+}
+
+
+.Links{
+  background-color: red;
+}
+
+.Links2{
+  background-color: grey;
+}
+
+.Links3{
+  background-color: silver;
+}
+
+.Link4{
+  background-color: yellow;
+}
+
+.Link5{
+  background-color: black;
+}
+
+#picture1{
+  background-image: url("Images/Fellowshipring.jpg");
+  height: 450px;
+  background-size: cover;
+  background-position: auto;
+}
+
+section1 {
+    display: block;
+    background-color: crimson;
+    color: gold;
+}
+
+section2 {
+    display: block;
+    background-color: grey;
+    color: black;
+}
+
+section3 {
+    display: block;
+    background-color: yellow;
+    color: black;
+}
+
+section4 {
+    display: block;
+    background-color: black;
+    color: red;
+}
+
+section5 {
+    display: block;
+    background-color: black;
+    color: red;
+}
+
+.House{
+  padding: 10px;
+  background-color: brown;
+  height: 350px;
+  width: 450px;
+  text-align: center;
+}
+
+@media(max-width:500px){
+  h1{
+    font-size: 10px;
+  }
+
+.panel{
+  width: 30%;
+}
+
+.Sidebars{
+  width: 300px;
+  background-color: #139dd7;
+}
+
+.Leftbox {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.Rightgrid{
+  display: grid;
+}
+
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
