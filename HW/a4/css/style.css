@@ -1,0 +1,199 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    background-color: rgb(47, 79, 79);
+    font-family: 'Futura', sans-serif;
+}
+
+.head{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 520px 50px;
+    text-align: center;
+    align-items: center;
+    background-image: url(../assets/images/store1.jpg);
+    background-size: cover;
+    background-position: center;
+    color: yellow;
+}
+
+.head2{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 30px 50px;
+    text-align: center;
+    align-items: center;
+    background-color: brown;
+    color: yellow;
+}
+
+.title{
+    font-size: 60px;
+    align-self: flex-end;
+}
+
+.title2{
+    font-size: 10px;
+    text-align: left;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px;
+    background-image: linear-gradient(rgba(47, 79, 79, 0), rgba(47, 79, 79, 1));
+    line-height: 50px;
+}
+
+.menu > a, .menu2 > a{
+    text-decoration: none;
+    color: beige;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.menu > a:hover, .menu2 > a:hover{
+    font-size: 35px;
+    background-color: rgba(0, 0, 0, 0.3)
+}
+
+.menu2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px;
+    background-color: mediumaquamarine;
+    line-height: 50px;
+}
+
+.item1{
+    border-right: 2px solid yellow;
+}
+
+.item3{
+    border-left: 2px solid yellow;
+}
+
+.about{
+    text-align: center;
+    color: yellow;
+}
+
+.abouthead{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.aboutbody{
+    font-size: 20px;
+    font-weight: normal;
+    padding: 0px 100px;
+}
+
+#examplepic{
+    height: auto;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.examplehead{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.shop{
+    margin: 50px;
+    display: grid;
+    grid-template-columns: auto 2fr;
+    grid-template-rows: 100px auto;
+    color: beige;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.1)
+}
+
+.picdiv{
+    grid-row: span 2;
+}
+
+.pic{
+    height: 400px;
+    width: auto;
+}
+
+.name{
+    font-size: 3em;
+    font-weight: bold;
+    padding: 25px;
+}
+.description{
+    font-size: 1.5em;
+    padding: 25px;
+}
+
+.foot{
+    text-align: center;
+    border-top: 2px solid gray;
+}
+
+.foot img{
+    height: 45px;
+    padding: 10px;
+}
+
+/*medium media query*/
+@media (max-width: 1050px){
+    .shop{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+    }
+
+    .picdiv{
+        position: relative;
+        text-align: center;
+    }
+
+    .pic{
+        max-width: auto;
+        max-height: auto;
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 600px){
+    body{
+        background-color: brown;
+    }
+    .title2{
+        background-color: aquamarine;
+    }
+    .menu2{
+        background-color: darkslategray;
+    }
+
+}
+
+@media print{
+
+    .shop{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+    }
+
+    .picdiv{
+        position: relative;
+        text-align: center;
+    }
+
+    .pic{
+        max-width: auto;
+        max-height: auto;
+        padding-top: 10px;
+    }
+
+    .shop, .title, .title2, .about, .menu > a, .menu2 > a{
+        color: black;
+    }
+
+}
